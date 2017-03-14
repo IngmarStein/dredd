@@ -158,6 +158,7 @@ class Dredd
       json: false
     , (downloadError, res, body) =>
       if downloadError
+        logger.debug("Downloading #{fileUrl} errored:", "#{downloadError}" or downloadError.code)
         err = new Error("""\
           Error when loading file from URL '#{fileUrl}'. \
           Is the provided URL correct?\
