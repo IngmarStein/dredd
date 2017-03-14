@@ -9,7 +9,7 @@ Dredd = require('../../src/dredd')
 
 
 PROXY_PORT = DEFAULT_SERVER_PORT + 1
-PROXY_URL = "http://127.0.0.1:#{PROXY_PORT}" # using http: even for HTTPS proxy (see 'createHttpsProxy')
+PROXY_URL = "http://127.0.0.1:#{PROXY_PORT}"
 DIFFERENT_PROXY_URL = 'http://proxy.example.com'
 
 SERVER_URL_HTTP = 'http://tested-api.example.com'
