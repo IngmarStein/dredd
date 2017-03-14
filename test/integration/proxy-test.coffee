@@ -3,7 +3,7 @@ url = require('url')
 clone = require('clone')
 {assert} = require('chai')
 
-{createServer, runDredd, runDreddWithServer, recordLogging, DEFAULT_SERVER_PORT} = require('./helpers')
+{runDredd, recordLogging, DEFAULT_SERVER_PORT} = require('./helpers')
 logger = require('../../src/logger')
 Dredd = require('../../src/dredd')
 
